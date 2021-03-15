@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id = "title"> Adyaadias </title>
+    <link rel="stylesheet" href="style.css">
+<!--FONT-->
+    <link href='https://fonts.googleapis.com/css?family=Abhaya Libre' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Bubbler One' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Adamina' rel='stylesheet'>
+    <script src="Latihan1.js"></script>
+</head>
+<body>
+<!--Menu-->
+    <div>
+        <h2 class = "kop1">Andi Besse</h2>
+        <div class="menu">
+            <a href="index.html"></a>
+            <a href="index.html"><h2 class = "Profile">Profile</h2></a>
+            <a href="#pendidikan"><h2 class = "Education">Education</h2></a>
+            <a href="#pelatihan"><h2 class = "Experience">Experience</h2></a>
+            <a href="#keterampilan"><h2 class = "Skills">Skills</h2></a>
+            <a href="Latihan.html"><h2 class="Latihan1"> Tugas Java Script</h2></a>
+        </div>
+    </div>
+<!--TUGAS-->
+    <section class="judul" id="judul">
+    <div class="square5"></div>
+    <div>
+        <h2 class="tugas">Latihan 1 Java Script</h2>
+    </div>
+    </section>
+    
+    <section class="top">
+    <div>
+    
+        <h2 class="statistik">Statistik</h2>
+        <h5>
+            <form action="" class="input">
+                <input type="number"  id="firstNum" placeholder="Nilai-1"><br>
+                <input type="number"  id="secondNum" placeholder="Nilai-2"><br>
+                <input type="number"  id="thirdNum" placeholder="Nilai-3"><br>
+            </form>
+        </h5>
+        
+    <div class="button1">
+        <input type="button" onclick="hasil()" value="Hitung">
+        <input type="button" onclick="hapus()" value = "Hapus">
+    </div>
+        
+    </div>
+
+    <div>
+        <h5 class="hasil">
+        <ul>
+            <p>Rata-Rata : </p>
+            <span id="mean"></span> <br>
+            <p>Nilai Terendah : </p>
+            <span id="min"></span> <br>
+            <p>Nilai Tengah : </p>
+            <span id="median"></span> <br>
+            <p>Nilai Tertinggi : </p>
+            <span id="max"></span> <br>
+        </ul>
+        </h5>
+    </div>    
+    </section>
+</body>
+</html>
