@@ -1,4 +1,3 @@
-
 /* Pembuka */
 body{
     background-color: #ebebe0;
@@ -37,31 +36,37 @@ body{
 
 .Profile {
     top: -50px;
-    left: 570px;
+    left: 370px;
     display: inline-block;
 }
 
 .Education {
     top: -95px;
-    left: 640px;
+    left: 440px;
     display: inline-block;
 }
 
 .Experience {
     top: -140px;
-    left: 740px;
+    left: 540px;
     display: inline-block;
 }
 
 .Skills {
     top: -185px;
-    left: 850px;
+    left: 650px;
     display: inline-block;
 }
 
 .Latihan1 {
     top: -185px;
-    left: 850px;
+    left: 650px;
+    display: inline-block;
+}
+
+.mahasiwa {
+    top: -200px;
+    left: 6500px;
     display: inline-block;
 }
 

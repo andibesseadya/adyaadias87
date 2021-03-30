@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" manifest="latihan.appcache">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id = "title"> Adyaadias </title>
+    <!--
+        <link rel="stylesheet" href="style.css">
+     -->
+    <link rel="stylesheet" href="mhs.css">
+    <!--FONT-->
+    <link href='https://fonts.googleapis.com/css?family=Bubbler One' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Abhaya Libre' rel='stylesheet'>
+    
+    <!-- <script src="Latihan1.js"></script> -->
+</head>
+<body>
+    <!--Menu-->
+    <div>
+        <h2 class = "kop1">Andi Besse</h2>
+        <div class="menu">
+            <a href="index.html"></a>
+            <a href="index.html"><h2 class = "Profile">Profile</h2></a>
+            <a href="#pendidikan"><h2 class = "Education">Education</h2></a>
+            <a href="#pelatihan"><h2 class = "Experience">Experience</h2></a>
+            <a href="#keterampilan"><h2 class = "Skills">Skills</h2></a>
+            <a href="Latihan.html"><h2 class="Latihan1"> Tugas JS</h2></a>
+            <a href="mhs.html"><h2 class="mahasiswa">Tugas OOP </h2></a>
+        </div>
+    </div>
+    <!--tugas2-->
+    <div class="judul1">
+        <div class="square6"></div>
+        <h2 class="tugas2">Registrasi Mahasiswa</h2>
+        <div class="tabel">                             
+            <form id='frmUtama'>
+                <ul>
+                    <li>
+                        <label for="nama">Nama:</label>
+                        <input id="nama" name="nama" type="text" maxlength="50" required/>
+                    </li>
+                    <li>
+                        <label for="nim">NIM:</label>
+                        <input id="nim" name="nim" type="text" maxlength="20" required/>
+                    </li>     
+                    <li>
+                        <label for="prodi">Prodi:</label>
+                        <input id="prodi" name="prodi" type="text" maxlength="30"required/>
+                    </li>     
+                    <li>
+                        <label for="email">Email:</label>
+                        <input id="email" name="email" type="text" maxlength="30" required />
+                    </li>
+                    <li class="button">
+                        <input id='btnTambah' type="submit" value="Daftar" />
+                    </li>
+                    <li class="button1">
+                        <input id='buttonHapus' type="reset" value="Hapus"/>
+                    </li>
+                </ul>
+            </form>
+
+            <p class="subhead">List Mahasiswa Terdaftar</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nama</th>
+                        <th>NIM</th>
+                        <th>Prodi</th>
+                        <th>Email</th>
+                        <th></th>
+                    </tr>         
+                </thead>
+                <tbody id="tabel">
+                </tbody>
+            </table> 
+
+            <div id='pesan'>    
+            </div>
+        </div>
+    </div>
+
+        
+      
+    <script src="mhs.js"></script>
+</body>
+</html>

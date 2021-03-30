@@ -1,0 +1,172 @@
+/* Pembuka */
+body{
+    background-color: #ebebe0;
+    width: 30%;
+}
+
+.container {
+   width: 1000px;
+   min-height: 200px;
+   margin:100%;
+   text-align:auto;
+}
+
+/* Menu */
+.kop1 {
+    font-family: 'Bubbler One';
+    font-size: 22px;
+    color: #133435;
+    top: -5px;
+    left: 15px;
+    position:relative;
+}
+
+.menu {
+    font-family: 'Bubbler One';
+    color: #133435;
+    position:absolute;
+    top: 0px;
+    right: 50px;
+}
+
+.menu h2{
+    font-size: 22px;
+    margin-left: 15px;
+}
+
+.Profile {
+    top: -50px;
+    left: 370px;
+    display: inline-block;
+}
+
+.Education {
+    top: -95px;
+    left: 440px;
+    display: inline-block;
+}
+
+.Experience {
+    top: -140px;
+    left: 540px;
+    display: inline-block;
+}
+
+.Skills {
+    top: -185px;
+    left: 650px;
+    display: inline-block;
+}
+
+.Latihan1 {
+    top: -185px;
+    left: 650px;
+    display: inline-block;
+}
+
+.mahasiswa {
+    top: -200px;
+    left: 6500px;
+    display: inline-block;
+}
+
+/* TUGAS */
+.tugas2 {
+    font-family: 'Abhaya Libre';
+    font-size: 50px;
+    color:  #133435;
+    text-align: center;
+    left: 370px;
+    width: 500px;
+    top: -620px;
+    position:relative;
+}
+
+.square6 {
+    background-color: #caa9ca;
+    position: relative;
+    top: 20px;
+    height: 620px;
+    width: 1250px;
+}
+
+.tabel .subhead {
+    font-family: 'Abhaya Libre';
+    color:  #133435; 
+    font-size: 20pt;
+    position: relative;
+    left: 35px;
+    margin-bottom: 0;
+}
+
+.tabel{
+    font-family: 'Abhaya Libre';
+    color:  #133435;
+    text-align: center;
+    width: 500px;
+    top: -620px;
+    position:relative;
+}
+
+.tabel table {
+    font: 17px/30px Abhaya Libre;
+    border-collapse: collapse; 
+    width: 960px;
+    left: 150px;
+    position:relative;
+
+}
+.tabel table th {
+    font-family: 'Abhaya Libre';
+    padding: 0 0.5em; 
+    text-align: center; 
+    background-color: #63815c;
+}
+.tabel table tr {
+    font-family: 'Abhaya Libre';
+    border-top: 1px solid #133435; 
+    border-bottom: 1px solid #133435;
+    background: #ebebe0;
+}
+.tabel table td {
+    padding: 0 0.5em;
+}
+.judul1 .tabel  form {
+    margin-top: 30px;
+}
+
+.tabel form{
+    
+    position:relative;
+}
+
+.tabel ul {
+    list-style-type: none; 
+    margin: 0px; 
+    padding: 0px;
+}
+.tabel li {
+    padding: 12px;
+}
+
+.tabel label {
+    width: 150px; margin-top: 3px; 
+    display: inline-block;
+}
+.tabel #pesan {
+    border: 1px dashed #caa9ca; 
+    padding: 10px;
+    margin-top: 10pt;
+    color: #808080; 
+    font-family: monospace;
+    position:relative;
+    left: 400px;
+}
+
+
+
+
+
+
+
+
