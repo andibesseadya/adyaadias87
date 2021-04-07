@@ -1,0 +1,195 @@
+/* Pembuka */
+body{
+    background-color: #ebebe0;
+    width: 30%;
+}
+
+.container {
+   width: 1000px;
+   min-height: 200px;
+   margin:100%;
+   text-align:auto;
+}
+
+/* Menu */
+.kop1 {
+    font-family: 'Bubbler One';
+    font-size: 22px;
+    color: #133435;
+    top: -5px;
+    left: 15px;
+    position:relative;
+}
+
+.menu {
+    font-family: 'Bubbler One';
+    color: #133435;
+    position:absolute;
+    top: 0px;
+    right: 50px;
+}
+
+.menu h2{
+    font-size: 22px;
+    margin-left: 15px;
+}
+
+.Profile {
+    top: -50px;
+    left: 370px;
+    display: inline-block;
+}
+
+.Education {
+    top: -95px;
+    left: 440px;
+    display: inline-block;
+}
+
+.Experience {
+    top: -140px;
+    left: 540px;
+    display: inline-block;
+}
+
+.Skills {
+    top: -185px;
+    left: 650px;
+    display: inline-block;
+}
+
+.Latihan1 {
+    top: -185px;
+    left: 650px;
+    display: inline-block;
+}
+
+.mahasiswa {
+    top: -200px;
+    left: 6500px;
+    display: inline-block;
+}
+
+.covid {
+    top: -200px;
+    left: 6500px;
+    display: inline-block;
+}
+
+/* TUGAS */
+/* ======================================================== DUNIA ================================================================= */
+
+.tugas3 {
+    font-family: 'Abhaya Libre';
+    font-size: 50px;
+    color:  #133435;
+    text-align: center;
+    left: 370px;
+    width: 500px;
+    top: -25px;
+    position:relative;
+}
+
+.judul1 {
+    width: 1250px;
+    margin: auto;
+    background-color: #caa9ca;
+}
+
+.judul1 .tugas3 {
+    font-family: 'Abhaya Libre';
+    font-size: 45px;
+    text-align: center;
+    margin-top: 50pt;
+    font-weight: bold;
+}
+
+.judul1 p {
+    font-family: 'Bubbler One' ;
+    font-size: 30px;
+    margin: 0 0 20px;
+    text-align: center;
+}
+
+.lastUpdate span {
+    font-family: 'Bubbler One' ;
+    font-size: 27px;
+    font-weight: bold;
+    display: flex;
+    margin-top: -50px;
+    justify-content: center;
+}
+
+.tab {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.main {
+    background-color: #b2b883;
+    width: 70%;
+    margin: 50px auto;
+    padding: 20px;
+    z-index: 1;
+    border-radius: 24px;
+    padding: 2%;
+    box-shadow: 0px 10px 60x -8px #133435;
+}
+
+.main .board {
+    column-count: 3;
+    column-gap: 1rem;
+}
+
+.judul1 img {
+    width: 30px;
+    position: absolute;
+    float: right;
+    padding-right: 240px;
+    margin-left: 15px;
+    margin-top: 1%; 
+}
+
+
+
+.card {
+    width: 84%;
+    background: #ebebe0;
+    padding: 8%;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    color: #133435;
+    font-family: 'Bubbler One';
+}
+
+.Positif {
+    background:rgb(187, 103, 119);
+}
+
+.Sembuh {
+    background: #b3d5dd;
+}
+
+.Meninggal {
+    background: rgb(236, 213, 197);
+}
+
+.card span {
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 4px;
+}
+
+
+.cf:before, .cf:after {
+    content: " ";
+    display: table;
+}
+
+.cf:after {
+    clear: both;
+}
+
+.cf {
+    *zoom: 1;
+} 
