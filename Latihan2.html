@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Potofolio</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+	
+	<script src="Latihan1.js"></script>
+</head>
+<body>
+    <section>
+       <nav>
+		<header>
+			<a href="#"><img src="./image/Bear2.png" class="logo"></a>
+			<div class="toggle"></div>
+			<ul class="mainMenu">
+				<li><a href="Adya.html">Home</a></li>
+				<li><a href="#about">Tentangku</a></li>
+				<li><a href="#sekolah">Sekolah</a></li>
+				<li><a href="#pengalaman">Pengalamanku</a></li>
+				<li><a href="#skill">Skill</a></li>
+				<li><a href="#">Tugasku</a>
+					<ul class="subMenu">
+						<li><a href="Latihan2.html">Tugas JS</a></li>
+						<li><a href="mhs.html">Tugas OOP</a></li>
+						<li><a href="covid.html">Covid 19</a></li>
+						<li><a href="#">Covid React</a></li>
+					</ul>
+				</li>
+				<li><a href="#kontak">Kontak</a></li>
+			</ul>
+		</header>
+	</nav>
+    </section>
+    <!--TUGAS-->
+    <section class="judul" id="judul">
+    <div class="square5"></div>
+    <div>
+        <h2 class="tugas">Latihan 1 Java Script</h2>
+    </div>
+    </section>
+    
+    <section class="top">
+    <div>
+    
+        <h2 class="statistik">Statistik</h2>
+        <h5>
+            <form action="" class="input">
+                <input type="number"  id="firstNum" placeholder="Nilai-1"><br>
+                <input type="number"  id="secondNum" placeholder="Nilai-2"><br>
+                <input type="number"  id="thirdNum" placeholder="Nilai-3"><br>
+            </form>
+        </h5>
+        
+    <div class="button1">
+        <input type="button" onclick="hasil()" value="Hitung">
+        <input type="button" onclick="hapus()" value = "Hapus">
+    </div>
+        
+    </div>
+
+    <div>
+        <h5 class="hasil">
+        <ul>
+            <p>Rata-Rata : </p>
+            <span id="mean"></span> <br>
+            <p>Nilai Terendah : </p>
+            <span id="min"></span> <br>
+            <p>Nilai Tengah : </p>
+            <span id="median"></span> <br>
+            <p>Nilai Tertinggi : </p>
+            <span id="max"></span> <br>
+        </ul>
+        </h5>
+    </div>    
+    </section>
+
+    <div class="copyright">
+		<p>Copyright @ 2021 Andi Besse Adya. All Right Reserved</p>
+	</div>
+
+    <script type="text/javascript">
+		window.addEventListener('scroll',function(){
+			var header = document.querySelector('header');
+			header.classList.toggle('sticky',window.scrollY > 0);
+		});
+	</script>
+</body>
+</html>

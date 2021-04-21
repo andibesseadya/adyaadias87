@@ -1,0 +1,479 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,600;1,300;1,400;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif;
+	scroll-behavior: smooth;
+}
+
+section
+{
+	padding: 100px;
+}
+
+.banner
+{
+	position: relative;
+	min-height: 100vh;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: #fff;
+}
+
+/* dropdown */
+nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	white-space: nowrap;
+	position: relative;
+	float: right;
+}
+
+nav .mainMenu>li{
+	display: inline-block;
+	margin-right: -5px;
+}
+
+nav a{
+	margin: 0;
+	text-align: left;
+	padding: 12px 15px 12px 15px;
+	
+	position: relative;
+	display: block;
+}
+
+nav li:hover>a {
+	background:gray ;
+	cursor: pointer;
+}
+
+nav .subMenu {
+	position: absolute;
+	background-color: rgb(98, 117, 117);
+	display: none;
+}
+
+nav .mainMenu>li:hover .subMenu {
+	display: block;
+}
+
+/* dropdown */
+
+header
+{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 20px 100px;
+	display: flex;
+	z-index: 1000;
+	justify-content: space-between;
+	align-items: center;
+	background: #fff;
+	transition: 0.5s;
+}
+header.sticky
+{
+	background: #111111;
+	padding: 1px 100px;
+	box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+
+}
+
+header .logo
+{
+	position: relative;
+	max-width: 120px;
+	transition: 0.5s;
+}
+
+header.sticky .logo
+{
+	background: #111111;
+	filter: invert(0);
+}
+
+header .logo:hover
+{
+	transform: translateY(20px);
+}
+
+header ul
+{
+	position: relative;
+	display: flex;
+}
+
+header ul li 
+{
+	position: relative;
+	list-style: none;
+}
+
+header ul li a
+{
+	position: relative;
+	display: inline-block;
+	color: #333;
+	font-weight: 480;
+	margin-left: 20px;
+	text-decoration: none;
+
+}
+
+
+header.sticky ul li a
+{
+	color: #fff
+}
+.content
+{
+	position: relative;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.content .textbox
+{
+	position: relative;
+	max-width: 600px;
+}
+
+.content .textbox h2
+{
+	color: #D1A7A0;
+	font-size: 3em;
+	line-height: 1.4em;
+	font-weight: 500;
+	font-family: 'Indie Flower', cursive;
+}
+
+.content .textbox p
+{
+	color: #333;
+	font-family:'Indie Flower', cursive;
+	font-weight: 800;
+}
+
+.content .textbox a
+{
+	display: inline-block;
+	margin-top: 20px;
+	padding: 8px 20px;
+	background: #AAC9CE;
+	color: #fff;
+	border-radius: 40px;
+	font-weight: 800;
+	letter-spacing: 1px;
+	text-decoration: none;
+	font-family: 'Indie Flower', cursive;
+}
+
+.content .ProfilePicture 
+{
+	width: 600px;
+	display: flex;
+	justify-content: flex-end;
+	padding-right: 50px;
+	margin-top: 50px;
+}
+
+.content .ProfilePicture img 
+{
+	max-width: 340px;
+}
+
+.sci 
+{
+	position: absolute;
+	top: 50%;
+	right: 30px;
+	transform: translateY(-50%);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.sci li
+{
+	list-style: none;
+}
+
+.sci li a
+{
+	display: inline-block;
+	margin: 5px 0;
+	transform: scale(0.6);
+	filter: invert(0);
+
+}
+
+.heading 
+{
+	width: 100%;
+	text-align: center;
+	margin-bottom: 30px;
+	color: #D1A7A0;
+	font-size: 24px;
+}
+
+.heading h2
+{
+	font-family: 'Indie Flower', cursive;
+	font-weight: 500;
+	font-size:30px;
+}
+
+.content2
+{
+	display: flex;
+	justify-content: space-between;
+}
+
+.content2Bx
+{
+	padding-right: 30px;
+}
+
+.content2Bx h3
+{
+	font-size: 28px;
+	font-weight: 800;
+	margin-bottom: 10px;
+	font-family: 'Indie Flower', cursive;
+
+}
+
+.content2Bx p
+{
+	font-family:'Indie Flower', cursive;
+	font-weight: 500;
+}
+
+.w50
+{
+	min-width: 40%;
+}
+
+img
+{
+	max-width: 100%;
+
+}
+
+.services
+{
+	background: #fff
+
+}
+
+.heading.white
+{
+	color: #333;
+}
+
+.heading.white p
+{
+	font-family: 'Indie Flower', cursive;
+	font-size: 20px;
+	font-weight: 700;
+}
+
+.services .content2
+{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+
+.services .content2 a
+{
+	text-decoration: none;
+}
+.services .content2 .servicesBx
+{
+	padding: 40px 20px;
+	background: #222;
+	color: #fff;
+	max-width:310px;
+	margin: 20px;
+	text-align: center;
+	transition: 0.5s;
+	border-radius: 5px;
+
+}
+
+.services .content2 .servicesBx img
+{
+	filter: invert(1);
+	max-width: 80px;
+	transition: 0.5s;
+}
+.services .content2 .servicesBx:hover
+{
+	background: #AAC9CE;
+	transform: scale(1.05);
+}
+
+.services .content2 .servicesBx h2
+{
+	font-size: 20px;
+	font-weight: 600;
+}
+
+.work .heading h2
+{
+	font-size: 40px;
+}
+
+
+.work .content2
+{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.work .content2 .workBx
+{
+	padding: 20px 10px;
+	max-width: 340px;
+	margin: 10px;
+	text-align: center;
+	transition: 0.5s;
+}
+
+.work .content2 .workBx:hover
+{
+	transform: scale(1.09);
+}
+
+.work .content2 .workBx p
+{
+	font-family: 'Indie Flower', cursive;
+	font-size: 20px;
+	font-weight: 700;
+}
+
+.school .content2
+{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.school .content2 .schoolBx
+{
+	padding: 20px 10px;
+	max-width: 340px;
+	margin: 10px;
+	text-align: center;
+	transition: 0.5s;
+}
+
+.school .content2 .schoolBx:hover
+{
+	transform: scale(1.09);
+}
+
+.school .content2 .schoolBx p
+{
+	font-family: 'Indie Flower', cursive;
+	font-size: 20px;
+	font-weight: 700;
+}
+
+.contact
+{
+	background: #fff;
+}
+
+.formBx
+{
+	min-width: 60%;
+}
+
+.formBx form
+{
+	display: flex;
+	flex-direction: column;
+}
+
+.formBx form h3,
+.contactInfo
+{
+	color: #111;
+	font-size: 20px;
+	font-weight: 700;
+	margin-bottom: 10px;
+	font-family: 'Indie Flower', cursive;
+}
+
+.formBx form input,
+.formBx form textarea
+{
+	margin-bottom: 20px;
+	padding: 15px;
+	font-size: 16px;
+	border: none;
+	outline: none;
+	background: #1111;
+	color: #222;
+	resize: none;
+}
+
+.formBx form textarea
+{
+	min-height: 200px;
+}
+
+.formBx form input[type="submit"]
+{
+	max-width: 100px;
+	background:  #AAC9CE;
+	cursor: pointer;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	padding: 10px;
+	font-size: 12px;
+	transition: 0.5s;
+}
+
+.formBx form input[type="submit"]:hover
+{
+	transform: scale(1.05);
+}
+
+.contactInfoBx .box .text p
+{
+	font-weight: 400;
+	font-size: 16px;
+}
+
+.contactInfoBx .box .text h3
+{
+	color: #AAC9CE;
+}
+
+.copyright
+{
+	text-align: center;
+	padding: 10px;
+	font-weight: 800;
+}
+.copyright p
+{
+	font-family: 'Indie Flower', cursive;
+}

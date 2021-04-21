@@ -14,20 +14,30 @@
 
 </head>
 <body>
-    <!--Menu-->
-    <div>
-        <h2 class = "kop1">Andi Besse</h2>
-        <div class="menu">
-            <a href="index.html"></a>
-            <a href="index.html"><h2 class = "Profile">Profile</h2></a>
-            <a href="#pendidikan"><h2 class = "Education">Education</h2></a>
-            <a href="#pelatihan"><h2 class = "Experience">Experience</h2></a>
-            <a href="#keterampilan"><h2 class = "Skills">Skills</h2></a>
-            <a href="Latihan.html"><h2 class="Latihan1"> Tugas JS</h2></a>
-            <a href="mhs.html"><h2 class="mahasiswa">Tugas OOP </h2></a>
-            <a href="covid.html"><h2 class="covid">Covid 19</h2></a>
-        </div>
-    </div>
+    <section>
+        <nav>
+		<header>
+			<a href="#"><img src="./image/Bear2.png" class="logo"></a>
+			<div class="toggle"></div>
+			<ul class="mainMenu">
+				<li><a href="Adya.html">Home</a></li>
+				<li><a href="#about">Tentangku</a></li>
+				<li><a href="#sekolah">Sekolah</a></li>
+				<li><a href="#pengalaman">Pengalamanku</a></li>
+				<li><a href="#skill">Skill</a></li>
+				<li><a href="#">Tugasku</a>
+					<ul class="subMenu">
+						<li><a href="Latihan2.html">Tugas JS</a></li>
+						<li><a href="mhs.html">Tugas OOP</a></li>
+						<li><a href="covid.html">Covid 19</a></li>
+						<li><a href="#">Covid React</a></li>
+					</ul>
+				</li>
+				<li><a href="#kontak">Kontak</a></li>
+			</ul>
+		</header>
+	</nav>
+    </section>
     
     <!--tugas3-->
     
@@ -39,7 +49,7 @@
 
 <!-- ======================================================= DUNIA =============================================================== -->
         <div class="main">
-            <p>Dunia <span class="tab"></span><img src="image/world1.png" alt="dunia"></p>
+            <p>Dunia <span class="tab"></span><img src="./image/world1.png" alt="dunia"></p>
 
             <div class="board">
                 <div class="card Positif">
@@ -59,7 +69,7 @@
 
 <!-- ======================================================= Indonesia =============================================================== -->
         <div class="main">
-            <p>Indonesia<img src="image/indonesia.png" alt="indonesia"></p>
+            <p>Indonesia<img src="./image/indonesia.png" alt="indonesia"></p>
             
             <div class="board">
                 <div class="card Positif">
@@ -78,7 +88,7 @@
         </div>
 <!-- ======================================================= Brunei =============================================================== -->
         <div class="main">
-            <p>Brunei Darussalam<img src="image/brunei.png" alt="brunei"></p>
+            <p>Brunei Darussalam<img src="./image/brunei.png" alt="brunei"></p>
 
             <div class="board">
                 <div class="card Positif">
@@ -97,7 +107,7 @@
         </div>
 <!-- ======================================================= Laos =============================================================== -->
         <div class="main">
-            <p>Laos<img src="image/laos.png" alt="laos"></p>
+            <p>Laos<img src="./image/laos.png" alt="laos"></p>
 
             <div class="board">
                 <div class="card Positif">
@@ -116,7 +126,7 @@
         </div>
 <!-- ======================================================= Malaysia =============================================================== -->
         <div class="main">
-            <p>Malaysia<img src="image/malaysia.png" alt="malaysia"></p>
+            <p>Malaysia<img src="./image/malaysia.png" alt="malaysia"></p>
 
             <div class="board">
                 <div class="card Positif">
@@ -136,7 +146,7 @@
 
 <!-- ======================================================= Philippines =============================================================== -->
         <div class="main">
-            <p>Philippines<img src="image/philippines.png" alt="philippines"></p>
+            <p>Philippines<img src="./image/philippines.png" alt="philippines"></p>
 
             <div class="board">
                 <div class="card Positif">
@@ -155,7 +165,7 @@
         </div>
         <!-- ======================================================= Singapore =============================================================== -->
         <div class="main">
-            <p>Singapore<img src="image/singapore.png" alt="singapore"></p>
+            <p>Singapore<img src="./image/singapore.png" alt="singapore"></p>
 
             <div class="board">
                 <div class="card Positif">
@@ -174,7 +184,7 @@
         </div>
 <!-- ======================================================= Thailand =============================================================== -->
         <div class="main">
-            <p>Thailand<img src="image/thailand.png" alt="thailand"></p>
+            <p>Thailand<img src="./image/thailand.png" alt="thailand"></p>
 
             <div class="board">
                 <div class="card Positif">
@@ -194,7 +204,7 @@
 
 <!-- ======================================================= Vietnam =============================================================== -->
         <div class="main">
-            <p>Vietnam<img src="image/vietnam.png" alt="vietnam"></p>
+            <p>Vietnam<img src="./image/vietnam.png" alt="vietnam"></p>
 
             <div class="board">
                 <div class="card Positif">
@@ -215,19 +225,17 @@
     </div>
     </div>
 
+    <div class="copyright">
+		<p>Copyright @ 2021 Andi Besse Adya. All Right Reserved</p>
+	</div>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="covid.js"></script>
+    <script type="text/javascript">
+		window.addEventListener('scroll',function(){
+			var header = document.querySelector('header');
+			header.classList.toggle('sticky',window.scrollY > 0);
+		});
+	</script>
 </body>
 </html>
 
-<!--
-    </div>
-    <div class="dropdown"> 
-        <button class="dropbutton"><h2>Tugas</h2></button>
-        <div class="dropdown-content">
-        <a href="Latihan.html"><h2 class="Latihan1"> Tugas JS</h2></a>
-        <a href="mhs.html"><h2 class="mahasiswa">Tugas OOP </h2></a>
-        <a href="covid.html"><h2 class="covid">Covid 19</h2></a>
-        </div>
-    </div>
-    -->

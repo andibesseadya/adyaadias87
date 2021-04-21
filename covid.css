@@ -1,86 +1,157 @@
-/* Pembuka */
-body{
-    background-color: #ebebe0;
-    width: 30%;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,600;1,300;1,400;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif;
+	scroll-behavior: smooth;
 }
 
-.container {
-   width: 1000px;
-   min-height: 200px;
-   margin:100%;
-   text-align:auto;
+section
+{
+	padding: 100px;
 }
 
-/* Menu */
-.kop1 {
-    font-family: 'Bubbler One';
-    font-size: 22px;
-    color: #133435;
-    top: -5px;
-    left: 15px;
-    position:relative;
+.banner
+{
+	position: relative;
+	min-height: 100vh;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: #fff;
 }
 
-.menu {
-    font-family: 'Bubbler One';
-    color: #133435;
-    position:absolute;
-    top: 0px;
-    right: 50px;
+/* dropdown */
+nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	white-space: nowrap;
+	position: relative;
+	float: right;
 }
 
-.menu h2{
-    font-size: 22px;
-    margin-left: 15px;
+nav .mainMenu>li{
+	display: inline-block;
+	margin-right: -5px;
 }
 
-.Profile {
-    top: -50px;
-    left: 370px;
-    display: inline-block;
+nav a{
+	margin: 0;
+	text-align: left;
+	padding: 12px 15px 12px 15px;
+	
+	position: relative;
+	display: block;
 }
 
-.Education {
-    top: -95px;
-    left: 440px;
-    display: inline-block;
+nav li:hover>a {
+	background:gray ;
+	cursor: pointer;
 }
 
-.Experience {
-    top: -140px;
-    left: 540px;
-    display: inline-block;
+nav .subMenu {
+	position: absolute;
+	background-color: rgb(98, 117, 117);
+	display: none;
 }
 
-.Skills {
-    top: -185px;
-    left: 650px;
-    display: inline-block;
+nav .mainMenu>li:hover .subMenu {
+	display: block;
 }
 
-.Latihan1 {
-    top: -185px;
-    left: 650px;
-    display: inline-block;
+/* dropdown */
+
+header
+{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 20px 100px;
+	display: flex;
+	z-index: 1000;
+	justify-content: space-between;
+	align-items: center;
+	background: #fff;
+	transition: 0.5s;
+}
+header.sticky
+{
+	background: #111111;
+	padding: 1px 100px;
+	box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+
 }
 
-.mahasiswa {
-    top: -200px;
-    left: 6500px;
-    display: inline-block;
+header .logo
+{
+	position: relative;
+	max-width: 120px;
+	transition: 0.5s;
 }
 
-.covid {
-    top: -200px;
-    left: 6500px;
-    display: inline-block;
+header.sticky .logo
+{
+	background: #111111;
+	filter: invert(0);
 }
+
+header .logo:hover
+{
+	transform: translateY(20px);
+}
+
+header ul
+{
+	position: relative;
+	display: flex;
+}
+
+header ul li 
+{
+	position: relative;
+	list-style: none;
+}
+
+header ul li a
+{
+	position: relative;
+	display: inline-block;
+	color: #333;
+	font-weight: 480;
+	margin-left: 20px;
+	text-decoration: none;
+
+}
+
+
+header.sticky ul li a
+{
+	color: #fff
+}
+
+.copyright
+{
+	text-align: center;
+	padding: 10px;
+	font-weight: 800;
+}
+.copyright p
+{
+	font-family: 'Indie Flower', cursive;
+}
+
 
 /* TUGAS */
 /* ======================================================== DUNIA ================================================================= */
 
 .tugas3 {
-    font-family: 'Abhaya Libre';
+    font-family:  'Indie Flower', cursive;
     font-size: 50px;
     color:  #133435;
     text-align: center;
@@ -93,11 +164,10 @@ body{
 .judul1 {
     width: 1250px;
     margin: auto;
-    background-color: #caa9ca;
 }
 
 .judul1 .tugas3 {
-    font-family: 'Abhaya Libre';
+    font-family:  'Indie Flower', cursive;
     font-size: 45px;
     text-align: center;
     margin-top: 50pt;
@@ -105,18 +175,19 @@ body{
 }
 
 .judul1 p {
-    font-family: 'Bubbler One' ;
+    font-family:  'Indie Flower', cursive;
     font-size: 30px;
     margin: 0 0 20px;
     text-align: center;
 }
 
 .lastUpdate span {
-    font-family: 'Bubbler One' ;
+    font-family:  'Indie Flower', cursive;
     font-size: 27px;
     font-weight: bold;
+    color: #133435;
     display: flex;
-    margin-top: -50px;
+    margin-top: -10px;
     justify-content: center;
 }
 
@@ -143,6 +214,7 @@ body{
 
 .main .board h5{
     font-size: 17px;
+    
 }
 
 .judul1 img {
@@ -154,28 +226,29 @@ body{
     margin-top: 0.8%; 
 }
 
-
-
 .card {
     width: 84%;
     background: #ebebe0;
-    padding: 8%;
+    padding: 4%;
     margin-bottom: 20px;
     border-radius: 6px;
     color: #133435;
-    font-family: 'Bubbler One';
+    font-family:  'Indie Flower', cursive;
 }
 
 .Positif {
     background:rgb(187, 103, 119);
+	font-family:  'Indie Flower', cursive;
 }
 
 .Sembuh {
     background: #b3d5dd;
+	font-family:  'Indie Flower', cursive;
 }
 
 .Meninggal {
     background: rgb(236, 213, 197);
+	font-family:  'Indie Flower', cursive;
 }
 
 .card span {
